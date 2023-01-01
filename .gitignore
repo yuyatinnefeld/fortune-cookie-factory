@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,emacs
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,emacs
 
+### Poetry
+poetry.lock
+
 ### Emacs ###
 # -*- mode: gitignore; -*-
 *~
