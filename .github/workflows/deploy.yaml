@@ -13,8 +13,7 @@ jobs:
         python-version: [3.9]
         poetry-version: [1.1.2]
         os: [ubuntu-latest]
-    env:
-      POETRY_ROOT_PATH: fortune-cookie-factory
+        poetry-root-path: fortune-cookie-factory
 
     runs-on: ${{ matrix.os }}
     steps:
@@ -28,7 +27,7 @@ jobs:
           poetry-version: ${{ matrix.poetry-version }}
       - name: Install dependencies
         run: |
-          cd $POETRY_ROOT_PATH
+          cd ${{ matrix.poetry-root-path }}
           poetry install
       - name: Run tests
         run: poetry run pytest --cov=./ --cov-report=xml
