@@ -1,7 +1,7 @@
 import random
 
 
-def open_cookie():
+def open_cookie() -> None:
     text = call_text()
     print("🎉 Your fortune cookie tells 🎉")
     print(f"🍪 {text} 🍪 \n")
