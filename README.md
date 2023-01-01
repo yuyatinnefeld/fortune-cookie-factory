@@ -48,7 +48,7 @@ poetry run my-demo-script
 poetry install
 
 # run test
-poetry add pytest pytest-cov -D
+poetry add pytest pytest-cov bandit safety -D
 poetry run pytest
 
 # reformat
