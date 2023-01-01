@@ -95,7 +95,7 @@ jobs:
         run: |
           cd $POETRY_ROOT_PATH
           poetry install
-      - name: Run tests
+      - name: Deploy Poetry Package
         run: |
           cd $POETRY_ROOT_PATH
           poetry config pypi-token.pypi $POETRY_PYPI_TOKEN_PYPI

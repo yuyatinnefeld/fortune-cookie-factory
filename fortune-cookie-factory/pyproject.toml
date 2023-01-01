@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fortune-cookie-factory"
-version = "0.0.3"
+version = "0.0.2"
 description = ""
 authors = ["yuyatinnefeld <yuyatinnefeld@gmail.com>"]
 readme = "README.md"
