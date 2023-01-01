@@ -31,6 +31,8 @@ jobs:
           cd $POETRY_ROOT_PATH
           poetry install
       - name: Run tests
-        run: poetry run pytest --cov=./ --cov-report=xml
+        run: |
+          cd $POETRY_ROOT_PATH
+          poetry run pytest --cov=./ --cov-report=xml
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
