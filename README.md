@@ -48,7 +48,7 @@ poetry run my-demo-script
 poetry install
 
 # run test
-poetry add pytest -D
+poetry add pytest pytest-cov -D
 poetry run pytest
 
 # reformat
