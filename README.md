@@ -1,4 +1,4 @@
-# Python Poetry Package with Fortune Cookie Factory Project
+# Poetry Package with Fortune Cookie Factory Project
 
 ## About
 A simple Python package `fortune-cookie-facrory` is written with the modern Python development tool, `Poetry` and deployed with `GitHub Actions`. 
@@ -38,15 +38,24 @@ $ python
 ## How to run the project locally?
 ```bash
 ### local test ###
+
+# run script
 git clone git@github.com:yuyatinnefeld/fortune-cookie-factory.git
 cd fortune-cookie-factory/fortune-cookie-factory
 poetry run my-demo-script
+
+# install pacakges
+poetry install
+
+# run test
+poetry add pytest -D
+poetry run pytest
 
 ### local deploy ###
 # create a API token in the PyPI Repo
 
 # set as an env variable
-export POETRY_PYPI_TOKEN_PYPI=my-token
+export POETRY_PYPI_TOKEN_PYPI=<my-token>
 
 # enable token for pypi
 poetry config pypi-token.pypi $POETRY_PYPI_TOKEN_PYPI

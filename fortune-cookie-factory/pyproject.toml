@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fortune-cookie-factory"
-version = "0.0.1"
+version = "0.0.2"
 description = ""
 authors = ["yuyatinnefeld <yuyatinnefeld@gmail.com>"]
 readme = "README.md"
@@ -11,6 +11,10 @@ python = "^3.7"
 
 [tool.poetry.scripts]
 my-demo-script = "fortune_cookie.app:open_cookie"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+pytest = "^7.2.0"
 
 [[tool.poetry.source]]
 name = "testpypi"
