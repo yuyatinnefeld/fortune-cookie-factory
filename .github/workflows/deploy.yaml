@@ -98,6 +98,5 @@ jobs:
       - name: Run tests
         run: |
           cd $POETRY_ROOT_PATH
-          head -5 $POETRY_PYPI_TOKEN_PYPI
           poetry config pypi-token.pypi $POETRY_PYPI_TOKEN_PYPI
           poetry publish --build
