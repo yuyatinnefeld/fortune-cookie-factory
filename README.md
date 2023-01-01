@@ -52,6 +52,7 @@ poetry add pytest -D
 poetry run pytest
 
 # reformat
+poetry add black -D
 poetry run black fortune_cookie
 
 ### local deploy ###
