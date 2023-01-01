@@ -9,9 +9,9 @@ def open_cookie():
 
 def call_text() -> str:
     str_list = [
-        "Nothing astonishes men so much as common sense and plain dealing.", 
-        "If you have something good in your life, don't let it go!", 
-        "People are naturally attracted to you.", 
+        "Nothing astonishes men so much as common sense and plain dealing.",
+        "If you have something good in your life, don't let it go!",
+        "People are naturally attracted to you.",
         "A stranger, is a friend you have not spoken to yet.",
         "A short stranger will soon enter your life with blessings to share.",
         "Now is the time to try something new.",
@@ -25,5 +25,5 @@ def call_text() -> str:
         "You are very talented in many ways.",
         "Your shoes will make you happy today.",
     ]
-    
+
     return random.choice(str_list)

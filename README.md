@@ -51,6 +51,9 @@ poetry install
 poetry add pytest -D
 poetry run pytest
 
+# reformat
+poetry run black fortune_cookie
+
 ### local deploy ###
 # create a API token in the PyPI Repo
 
