@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fortune-cookie-factory"
+version = "0.0.1"
+description = ""
+authors = ["yuyatinnefeld <yuyatinnefeld@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fortune_cookie"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.scripts]
+my-demo-script = "fortune_cookie.app:open_cookie"
+
+[[tool.poetry.source]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+default = false
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
