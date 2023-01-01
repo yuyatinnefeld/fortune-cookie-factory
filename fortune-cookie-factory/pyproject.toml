@@ -15,6 +15,7 @@ my-demo-script = "fortune_cookie.app:open_cookie"
 [tool.poetry.group.dev.dependencies]
 black = "^22.12.0"
 pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
 
 [[tool.poetry.source]]
 name = "testpypi"
