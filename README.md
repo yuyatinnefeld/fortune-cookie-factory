@@ -3,10 +3,9 @@
 ## About
 A simple Python package `fortune-cookie-facrory` is written with the modern Python development tool, `Poetry` and deployed with `GitHub Actions`. 
 
+You can see the message inside the cookie, a Chinese phrase with a list of lucky numbers for you to enjoy, share, or put in your own cookies.
 
-You can see the message inside of the cookie, a Chinese phrase with a list of lucky numbers for you to enjoy, share, or put in your own cookies.
-
-Main goal of this project that you have fun playing the fortune cookie app. My pernonal goals are learning GitHub Actions CI/CD well, creating, testing, mirroring a poetry project.
+The main goal of this project is that you have fun playing the fortune cookie app. My personal goals are learning GitHub Actions CI/CD well, creating, testing and mirroring a poetry project.
 
 
 ## How it works?       
@@ -45,6 +44,8 @@ cd fortune-cookie-factory/fortune-cookie-factory
 poetry run my-demo-script
 
 # install pacakges
+poetry env use python3.11
+
 poetry install
 
 # run test
@@ -69,4 +70,9 @@ poetry build
 
 # publish the project to pypi
 poetry publish
+
+# clean up
+poetry shell
+poetry env info
+poetry env remove --all
 ```
